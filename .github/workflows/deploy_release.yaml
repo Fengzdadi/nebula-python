@@ -20,7 +20,7 @@ jobs:
     - name: Test with pytest
       run: |
         docker compose -f tests/docker-compose.yaml up -d
-        sleep 20
+        sleep 60
         pdm test
     - name: Test SSL connection with pytest
       run: |
